@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/activity_margin">
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="@dimen/normal_icon_size"
+        android:layout_height="@dimen/normal_icon_size"
+        android:padding="@dimen/small_margin"
+        android:src="@drawable/ic_folder" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_icon"
+        android:layout_toEndOf="@+id/item_icon"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Directory" />
+
+    <LinearLayout
+        android:id="@+id/name_modified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/item_name"
+        android:layout_toRightOf="@+id/item_icon">
+
+        <TextView
+            android:id="@+id/item_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/smaller_text_size"
+            tools:text="1 KB" />
+
+        <TextView
+            android:id="@+id/last_modified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bigger_margin"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="@string/last_modified" />
+
+        <TextView
+            android:id="@+id/modified_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bigger_margin"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FileManager</string>
+
+    <string name="last_modified">Last modified:</string>
+</resources>
